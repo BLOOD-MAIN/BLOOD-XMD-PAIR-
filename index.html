@@ -11,16 +11,17 @@ body.dark-mode{background:#1a1a1a;color:#eee;}
 body.dark-mode .card{background:#2a2a2a;color:#eee;box-shadow:0 4px 10px rgba(0,0,0,0.6);}
 body.dark-mode .btn-contact, body.dark-mode .bot-card button{background:#e63946;color:#fff;}
 body.dark-mode .btn-contact:hover, body.dark-mode .bot-card button:hover{background:#b92b36;}
-body.dark-mode .friend-card h3{color:#fff;} /* Friend names white in dark mode */
+body.dark-mode .friend-card h3{color:#000;} /* Friend names black in dark mode */
 header{background:#e63946;color:#fff;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:1000;}
 header h1{font-size:24px;}
+body.dark-mode header{background:transparent;} /* Dark mode header transparent */
 .menu{position:relative;}
 .menu-button{padding:8px 12px;border:none;border-radius:6px;background:#fff;color:#e63946;font-weight:bold;cursor:pointer;}
 .menu-button:hover{background:#b92b36;color:#fff;}
 .dropdown{display:none;position:absolute;right:0;top:40px;background:#fff;border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,0.2);min-width:150px;}
 .dropdown button{display:block;width:100%;padding:10px;border:none;background:#fff;color:#e63946;text-align:left;cursor:pointer;}
 .dropdown button:hover{background:#b92b36;color:#fff;}
-#darkModeToggle{position:fixed;bottom:20px;right:20px;padding:10px 15px;border:none;border-radius:8px;background:#e63946;color:#fff;cursor:pointer;z-index:1001;}
+#darkModeToggle{margin-top:10px;padding:10px 15px;border:none;border-radius:8px;background:#e63946;color:#fff;cursor:pointer;z-index:1001;display:block;width:100%;}
 #darkModeToggle:hover{background:#b92b36;}
 section{padding:60px 20px;max-width:1000px;margin:auto;}
 .card{background:#fff;padding:30px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.1);margin-bottom:40px;text-align:center;}
@@ -47,8 +48,6 @@ footer img{width:32px;height:32px;margin:0 10px;cursor:pointer;}
 </head>
 <body>
 
-<button id="darkModeToggle">🌙 Dark Mode</button>
-
 <header>
   <h1>BLOOD-XMD Home</h1>
   <div class="menu">
@@ -59,6 +58,7 @@ footer img{width:32px;height:32px;margin:0 10px;cursor:pointer;}
       <button onclick="scrollToSection('minibot')">MINI BOT</button>
       <button onclick="scrollToSection('mainbot')">MAIN BOT</button>
       <button onclick="scrollToSection('deployMiniBotSection')">Deploy MINI BOT</button>
+      <button id="darkModeToggle">🌙 Dark Mode</button>
     </div>
   </div>
 </header>
@@ -79,17 +79,17 @@ footer img{width:32px;height:32px;margin:0 10px;cursor:pointer;}
     <div class="friend-card">
       <img src="https://via.placeholder.com/80" alt="M.R Dileesha OFC">
       <h3>M.R Dileesha OFC</h3>
-      <a href="#">Contact</a>
+      <a href="#">M.R Dileesha OFC - VISIT PROJECT</a>
     </div>
     <div class="friend-card">
       <img src="https://via.placeholder.com/80" alt="Chanuka Prabath">
       <h3>Chanuka Prabath</h3>
-      <a href="#">Contact</a>
+      <a href="#">Chanuka Prabath - VISIT PROJECT</a>
     </div>
     <div class="friend-card">
       <img src="https://files.catbox.moe/3caeom.jpg" alt="Nethan OFC">
       <h3>Nethan OFC</h3>
-      <a href="#">Contact</a>
+      <a href="#">Nethan OFC - VISIT PROJECT</a>
     </div>
   </div>
 </section>
@@ -151,4 +151,4 @@ function deployMiniBot(){
 }
 </script>
 </body>
-    </html>
+      </html>
