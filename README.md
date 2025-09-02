@@ -7,7 +7,7 @@ This is the **BLOOD-XMD Web App**, a centralized dashboard for managing **BLOOD-
 ## Features
 
 - **Profile Section**  
-  - Shows developer profile with photo and contact button (WhatsApp).  
+  - Shows developer profile with photo and WhatsApp contact.  
 
 - **Friends Section**  
   - Displays friends with photo and contact links.
@@ -38,21 +38,18 @@ This is the **BLOOD-XMD Web App**, a centralized dashboard for managing **BLOOD-
 
 ---
 
-## Installation (Local)
+🎎<h4 align="left">1. 𝐇𝐄𝐑𝐎𝐊𝐔</h4>
+<p align="left">
+<a href='https://dashboard.heroku.com/new?template=https://github.com/BLOOD-MAIN/BLOOD-XMD-PAIR-' target="_blank">
+<img alt='Heroku' src='https://img.shields.io/badge/-Heroku%20Deploy-purple?style=for-the-badge&logo=heroku&logoColor=white'/>
+</a>
+</p>
 
-1. Clone this repository:
-```bash
-git clone https://github.com/BLOOD-MAIN/BLOOD-XMD-PAIR-.git
-cd BLOOD-XMD-PAIR-
+**Or access your Heroku app dashboard here:**  
+[Open Dashboard](https://dashboard.heroku.com/apps)
 
+> After clicking deploy, set environment variables if needed, then deploy the app to your Heroku account.
 
 ---
 
-ඔයා මේක **`README.md`** ලෙස save කරලා GitHub repo root එකට push කරන්න.  
-
-- Deploy Button එක click කරන විට Heroku dashboard එකේ straight deploy කරන්න පුළුවන්.  
-- `Open Dashboard` link එක ඔයාගේ Heroku account dashboard access කරන්න use කරන්න පුළුවන්.  
-
-මම ඊළඟට ඔයාට **`app.json`** Heroku deploy-ready fully optimized version එකත් provide කරන්න පුළුවන්.  
-
-ඒකත් හදා දෙන්නම්ද?
+## File Structure
