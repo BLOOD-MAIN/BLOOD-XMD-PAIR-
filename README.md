@@ -44,3 +44,15 @@ This is the **BLOOD-XMD Web App**, a centralized dashboard for managing **BLOOD-
 ```bash
 git clone https://github.com/BLOOD-MAIN/BLOOD-XMD-PAIR-.git
 cd BLOOD-XMD-PAIR-
+
+
+---
+
+ඔයා මේක **`README.md`** ලෙස save කරලා GitHub repo root එකට push කරන්න.  
+
+- Deploy Button එක click කරන විට Heroku dashboard එකේ straight deploy කරන්න පුළුවන්.  
+- `Open Dashboard` link එක ඔයාගේ Heroku account dashboard access කරන්න use කරන්න පුළුවන්.  
+
+මම ඊළඟට ඔයාට **`app.json`** Heroku deploy-ready fully optimized version එකත් provide කරන්න පුළුවන්.  
+
+ඒකත් හදා දෙන්නම්ද?
