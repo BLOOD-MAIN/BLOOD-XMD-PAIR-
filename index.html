@@ -9,19 +9,19 @@
 body{font-family:Arial,sans-serif;background:#f4f4f9;color:#333;overflow-x:hidden;}
 body.dark-mode{background:#1a1a1a;color:#eee;}
 body.dark-mode .card{background:#2a2a2a;color:#eee;box-shadow:0 4px 10px rgba(0,0,0,0.6);}
-body.dark-mode .btn-contact, body.dark-mode .bot-card button{background:#e63946;color:#fff;}
-body.dark-mode .btn-contact:hover, body.dark-mode .bot-card button:hover{background:#b92b36;}
-body.dark-mode .friend-card h3{color:#fff;} /* Friend names white in dark mode */
+body.dark-mode .btn-contact, body.dark-mode .btn-visit, body.dark-mode .bot-card button{background:#e63946;color:#fff;}
+body.dark-mode .btn-contact:hover, body.dark-mode .btn-visit:hover, body.dark-mode .bot-card button:hover{background:#b92b36;}
+body.dark-mode .friend-card h3{color:#fff;}
 header{background:#e63946;color:#fff;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:1000;}
 header.dark-mode{background:transparent;}
 header h1{font-size:24px;}
-.menu{position:relative;}
-.menu-button{padding:8px 12px;border:none;border-radius:6px;background:#fff;color:#e63946;font-weight:bold;cursor:pointer;}
+.menu-container{position:relative;}
+.menu-button{padding:8px 12px;border:none;border-radius:6px;background:#fff;color:#e63946;font-weight:bold;cursor:pointer;margin-right:10px;}
 .menu-button:hover{background:#b92b36;color:#fff;}
 .dropdown{display:none;position:absolute;right:0;top:40px;background:#fff;border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,0.2);min-width:150px;}
 .dropdown button{display:block;width:100%;padding:10px;border:none;background:#fff;color:#e63946;text-align:left;cursor:pointer;}
 .dropdown button:hover{background:#b92b36;color:#fff;}
-#darkModeToggle{position:fixed;bottom:20px;right:20px;padding:10px 15px;border:none;border-radius:8px;background:#e63946;color:#fff;cursor:pointer;z-index:1001;}
+#darkModeToggle{padding:8px 12px;border:none;border-radius:6px;background:#e63946;color:#fff;cursor:pointer;}
 #darkModeToggle:hover{background:#b92b36;}
 section{padding:60px 20px;max-width:1000px;margin:auto;}
 .card{background:#fff;padding:30px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.1);margin-bottom:40px;text-align:center;}
@@ -48,11 +48,9 @@ footer img{width:32px;height:32px;margin:0 10px;cursor:pointer;}
 </head>
 <body>
 
-<button id="darkModeToggle">🌙 Dark Mode</button>
-
 <header id="header">
   <h1>BLOOD-XMD Home</h1>
-  <div class="menu">
+  <div class="menu-container">
     <button class="menu-button" id="menuBtn">Menu ▼</button>
     <div class="dropdown" id="menuDropdown">
       <button onclick="scrollToSection('profile')">Profile</button>
@@ -61,6 +59,7 @@ footer img{width:32px;height:32px;margin:0 10px;cursor:pointer;}
       <button onclick="scrollToSection('mainbot')">MAIN BOT</button>
       <button onclick="scrollToSection('deployMiniBotSection')">Deploy MINI BOT</button>
     </div>
+    <button id="darkModeToggle">🌙 Dark Mode</button>
   </div>
 </header>
 
@@ -120,29 +119,4 @@ footer img{width:32px;height:32px;margin:0 10px;cursor:pointer;}
 </section>
 
 <footer>
-  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
-</footer>
-
-<script>
-const menuBtn = document.getElementById('menuBtn');
-const dropdown = document.getElementById('menuDropdown');
-menuBtn.addEventListener('click', ()=>{dropdown.style.display = dropdown.style.display==='block'?'none':'block';});
-
-const darkModeToggle = document.getElementById('darkModeToggle');
-darkModeToggle.addEventListener('click', ()=>{
-  document.body.classList.toggle('dark-mode');
-  document.getElementById('header').classList.toggle('dark-mode');
-  if(document.body.classList.contains('dark-mode')) 
-    darkModeToggle.textContent='☀️ Light Mode';
-  else 
-    darkModeToggle.textContent='🌙 Dark Mode';
-});
-
-function scrollToSection(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});}
-
-function deployMiniBot(){
-  const username = document.getElementById('username').value;
-  const sessionId = document.getElementById('sessionId').value;
-  if
+  <img src="https://github.githubassets.com/images
