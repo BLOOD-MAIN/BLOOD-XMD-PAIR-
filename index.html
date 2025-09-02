@@ -8,21 +8,19 @@
 *{box-sizing:border-box;margin:0;padding:0;transition:all 0.3s;}
 body{font-family:Arial,sans-serif;background:#f4f4f9;color:#333;overflow-x:hidden;}
 body.dark-mode{background:#1a1a1a;color:#eee;}
+body.dark-mode header{background:transparent;}
 body.dark-mode .card{background:#2a2a2a;color:#eee;box-shadow:0 4px 10px rgba(0,0,0,0.6);}
 body.dark-mode .btn-contact, body.dark-mode .btn-visit, body.dark-mode .bot-card button{background:#e63946;color:#fff;}
 body.dark-mode .btn-contact:hover, body.dark-mode .btn-visit:hover, body.dark-mode .bot-card button:hover{background:#b92b36;}
 body.dark-mode .friend-card h3{color:#fff;}
 header{background:#e63946;color:#fff;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:1000;}
-header.dark-mode{background:transparent;}
 header h1{font-size:24px;}
-.menu-container{position:relative;}
-.menu-button{padding:8px 12px;border:none;border-radius:6px;background:#fff;color:#e63946;font-weight:bold;cursor:pointer;margin-right:10px;}
-.menu-button:hover{background:#b92b36;color:#fff;}
-.dropdown{display:none;position:absolute;right:0;top:40px;background:#fff;border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,0.2);min-width:150px;}
+.menu-container{position:relative;display:flex;align-items:center;}
+.menu-button, #darkModeToggle{padding:8px 12px;border:none;border-radius:6px;background:#fff;color:#e63946;font-weight:bold;cursor:pointer;margin-left:10px;}
+.menu-button:hover, #darkModeToggle:hover{background:#b92b36;color:#fff;}
+.dropdown{display:none;position:absolute;right:0;top:40px;background:#fff;border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,0.2);min-width:150px;z-index:1000;}
 .dropdown button{display:block;width:100%;padding:10px;border:none;background:#fff;color:#e63946;text-align:left;cursor:pointer;}
 .dropdown button:hover{background:#b92b36;color:#fff;}
-#darkModeToggle{padding:8px 12px;border:none;border-radius:6px;background:#e63946;color:#fff;cursor:pointer;}
-#darkModeToggle:hover{background:#b92b36;}
 section{padding:60px 20px;max-width:1000px;margin:auto;}
 .card{background:#fff;padding:30px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.1);margin-bottom:40px;text-align:center;}
 .profile img{width:150px;height:150px;border-radius:50%;border:4px solid #e63946;object-fit:cover;display:block;margin:auto;}
@@ -34,7 +32,7 @@ section{padding:60px 20px;max-width:1000px;margin:auto;}
 .friend-card{background:#f9f9f9;border-radius:10px;padding:15px;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,0.1);}
 .friend-card img{width:80px;height:80px;border-radius:50%;border:3px solid #e63946;object-fit:cover;}
 .friend-card h3{margin:10px 0 5px;}
-.friend-card a{display:inline-block;margin:5px 5px 0 0;padding:6px 12px;background:#e63946;color:#fff;border-radius:6px;font-size:14px;text-decoration:none;transition:all 0.3s;}
+.friend-card a{display:inline-block;margin-top:8px;padding:6px 12px;background:#e63946;color:#fff;border-radius:6px;font-size:14px;text-decoration:none;}
 .friend-card a:hover{background:#b92b36;}
 .bot-card img{max-width:100%;border-radius:12px;margin-top:15px;}
 .bot-card h2{color:#e63946;margin-top:15px;}
@@ -48,7 +46,7 @@ footer img{width:32px;height:32px;margin:0 10px;cursor:pointer;}
 </head>
 <body>
 
-<header id="header">
+<header>
   <h1>BLOOD-XMD Home</h1>
   <div class="menu-container">
     <button class="menu-button" id="menuBtn">Menu ▼</button>
@@ -68,7 +66,7 @@ footer img{width:32px;height:32px;margin:0 10px;cursor:pointer;}
     <img src="https://files.catbox.moe/rs1zep.jpg" alt="Sachithra Madusanka">
     <h2>Sachithra Madusanka</h2>
     <p>Developer of BLOOD-XMD Bots. Expert in WhatsApp automation and AI-driven multi-device bots.</p>
-    <a class="btn-contact" href="https://wa.me/94761332610?text=Hello%20Sachithra%20Madusanka%20👋🏻" target="_blank">WhatsApp</a>
+    <a class="btn-contact" href="https://wa.me/94761332610?text=Hello%20Sachithra%20Madusanka%20👋🏻" target="_blank">Contact</a>
     <a class="btn-visit" href="profile.html" target="_blank">Visit Profile</a>
   </div>
 </section>
@@ -79,20 +77,20 @@ footer img{width:32px;height:32px;margin:0 10px;cursor:pointer;}
     <div class="friend-card">
       <img src="https://via.placeholder.com/80" alt="M.R Dileesha OFC">
       <h3>M.R Dileesha OFC</h3>
-      <a href="https://wa.me/94700000000" target="_blank">Contact</a>
-      <a href="#">VISIT PROJECT</a>
+      <a href="#">Visit Project</a>
+      <a href="#">Contact</a>
     </div>
     <div class="friend-card">
       <img src="https://via.placeholder.com/80" alt="Chanuka Prabath">
       <h3>Chanuka Prabath</h3>
-      <a href="https://wa.me/94700000001" target="_blank">Contact</a>
-      <a href="#">VISIT PROJECT</a>
+      <a href="#">Visit Project</a>
+      <a href="#">Contact</a>
     </div>
     <div class="friend-card">
       <img src="https://files.catbox.moe/3caeom.jpg" alt="Nethan OFC">
       <h3>Nethan OFC</h3>
-      <a href="https://wa.me/94700000002" target="_blank">Contact</a>
-      <a href="#">VISIT PROJECT</a>
+      <a href="#">Visit Project</a>
+      <a href="#">Contact</a>
     </div>
   </div>
 </section>
@@ -119,4 +117,38 @@ footer img{width:32px;height:32px;margin:0 10px;cursor:pointer;}
 </section>
 
 <footer>
-  <img src="https://github.githubassets.com/images
+  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
+</footer>
+
+<script>
+// Menu toggle
+const menuBtn = document.getElementById('menuBtn');
+const dropdown = document.getElementById('menuDropdown');
+menuBtn.addEventListener('click', ()=>{
+  dropdown.style.display = dropdown.style.display==='block'?'none':'block';
+});
+
+// Dark/Light mode toggle
+const darkModeToggle = document.getElementById('darkModeToggle');
+darkModeToggle.addEventListener('click', ()=>{
+  document.body.classList.toggle('dark-mode');
+  darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+});
+
+// Scroll to sections
+function scrollToSection(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});}
+
+// Deploy mini bot function
+function deployMiniBot(){
+  const username = document.getElementById('username').value;
+  const sessionId = document.getElementById('sessionId').value;
+  if(!username || !sessionId){alert('Please enter name and session ID');return;}
+  alert(`Deploying Mini Bot for ${username} with session ID: ${sessionId}`);
+  // Actual deployment API call can be added here
+}
+</script>
+
+</body>
+        </html>
